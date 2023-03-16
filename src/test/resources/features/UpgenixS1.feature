@@ -3,5 +3,5 @@ Feature: Login
   Scenario
     Given
     When
-    And
-    Then
+    And ahmet is the best
+
