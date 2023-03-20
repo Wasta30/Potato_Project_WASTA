@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features ="src/test/resources/features" ,
         glue = "com/cydeo/Step_Definitions",
         dryRun = false,
-        tags = "@UPGNX10-227"
+        tags = "@UPGNX10-252"
 
 )
 
