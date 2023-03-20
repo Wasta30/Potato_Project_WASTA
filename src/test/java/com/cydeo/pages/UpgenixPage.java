@@ -32,7 +32,9 @@ public class UpgenixPage {
 @FindBy (xpath = "//a[.='Log out']")
 public WebElement LogoutButton;
 
-
+// locate alert msg "wrong login password
+    @FindBy(xpath = "//p[@class='alert alert-danger']")
+    public WebElement wrongLoginPassword;
 
 
 }

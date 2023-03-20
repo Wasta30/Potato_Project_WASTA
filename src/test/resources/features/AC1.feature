@@ -1,8 +1,13 @@
 Feature: Login functionality
 
+	Scenario :AC1-Users can log in with valid credentials.
+		When user goes to the login page
+		And  user enters valid "salesmanager15@info.com" and "salesmanager"
+		Then user clicks on login button or press  enter
 	
 	@UPGNX10-227
-	Scenario Outline:
+
+	Scenario Outline:  AC1-Users can log in with valid credentials.
 	    When user goes to the login page
 		And  user enters valid "<Email>" and "<Password>"
 		Then user clicks on login button or press  enter
