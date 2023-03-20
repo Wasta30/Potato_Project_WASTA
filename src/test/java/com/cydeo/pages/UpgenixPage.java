@@ -28,4 +28,11 @@ public class UpgenixPage {
     public WebElement LoginButtton;
 
 
+// Locate logout button
+@FindBy (xpath = "//a[.='Log out']")
+public WebElement LogoutButton;
+
+
+
+
 }
