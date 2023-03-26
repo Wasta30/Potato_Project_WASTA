@@ -19,22 +19,39 @@ public class UpgenixPage {
 
 // Locate passwordInputBox
 
-    @FindBy (xpath = "//input[@id='password']")
+    @FindBy(id = "password")
     public WebElement PasswordInputBox;
 
 
     // locate login button
-@FindBy (xpath = "//button[.='Log in']")
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
     public WebElement LoginButtton;
 
 
-// Locate logout button
-@FindBy (xpath = "//a[.='Log out']")
-public WebElement LogoutButton;
-
-// locate alert msg "wrong login password
+    // locate alert msg "wrong login password
     @FindBy(xpath = "//p[@class='alert alert-danger']")
     public WebElement wrongLoginPassword;
+
+// home page locating
+
+    @FindBy(xpath = "//div[.='Congratulations, your inbox is empty']")
+    public WebElement homepageTitle;
+
+
+    /**
+     * logout fubnctionality locators
+     */
+
+
+    // Locate logout button
+    @FindBy(xpath = "//a[.='Log out']")
+    public WebElement LogoutButton;
+
+    // Top username
+    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    public WebElement TopUsernameButton;
+
+
 
 
 }
