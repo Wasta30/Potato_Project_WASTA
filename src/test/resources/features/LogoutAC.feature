@@ -25,7 +25,7 @@ Feature: Logout functionality
 
 
   @UPGNX10-307
-  Scenario: AC3
+  Scenario: AC3- The user must be logged out if the user closes the open tab (all tabs if there are multiple open tabs)
     When user goes to the Login page
     And user enters valid email "salesmanager15@info.com" and valid password "salesmanager"
     And user clicks login button or presses enter

@@ -39,12 +39,19 @@ public class Login_Step_Definition {
     }
 
 
-    @And("user enters invalid email {string} and valid password {string}")
-    public void userEntersInvalidEmailAndValidPassword(String invalidEmail, String validPassowrd) {
-    upgenixPage.EmailInputBox.sendKeys(invalidEmail);
-    upgenixPage.PasswordInputBox.sendKeys(validPassowrd);
+
+
+    @And("user enters invalid email {string}")
+    public void userEntersInvalidEmail(String invalidEmail) {
+        upgenixPage.EmailInputBox.sendKeys(invalidEmail);
     }
 
+
+    @And("user enters valid password {string}")
+    public void userEntersValidPassword(String validPassword) {
+        upgenixPage.PasswordInputBox.sendKeys(validPassword);
+
+    }
     @And("user enters valid email {string} and invalid password {string}")
     public void userEntersValidEmailAndInvalidPassword(String validEmail, String invalidPassowrd) {
     upgenixPage.EmailInputBox.sendKeys(validEmail);
@@ -117,4 +124,13 @@ public class Login_Step_Definition {
     }
 
 
+    @And("user enters valid email {string}")
+    public void userEntersValidEmail(String validEmail) {
+        upgenixPage.EmailInputBox.sendKeys(validEmail);
+    }
+
+    @And("user enters invalid password {string}")
+    public void userEntersInvalidPassword(String invalidPassword  ) {
+        upgenixPage.PasswordInputBox.sendKeys(invalidPassword);
+    }
 }

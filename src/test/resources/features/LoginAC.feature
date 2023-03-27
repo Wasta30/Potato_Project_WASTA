@@ -1,4 +1,4 @@
-@wasta
+@runTest
 Feature: Login functionality
 
 
@@ -23,10 +23,12 @@ Feature: Login functionality
 
 		Scenario:AC2- "Wrong login/password" message should be displayed for invalid credentials (valid username-invalid password and invalid username-valid password)
 		When user goes to the login page
-		And  user enters invalid email "Salesmanager03@info.com" and valid password "salesmanager"
+		And  user enters invalid email "Salesmanager03@info.com"
+		And user enters valid password "salesmanager"
 		And  user clicks on login button or press  enter
 		Then user sees Wrong login or password message displayed
-		And user enters valid email "Salesmanager15@info.com" and invalid password "SalesManager"
+		And user enters valid email "Salesmanager15@info.com"
+		And user enters invalid password "SalesManager"
 		Then user clicks on login button or press  enter
 		Then user sees Wrong login or password message displayed
 
@@ -48,15 +50,15 @@ Feature: Login functionality
 	@UPGNX10-254
 	Scenario: AC4- User should see the password in bullet signs by default while typing (like ****)
 		When user goes to the login page
-		And  enters valid email"salesmanager15@info.com" and password "salesmanager"
-		Then user clicks on login button or press  enter
+		And user enters valid password "salesmanager"
 		And  user should see the password in bullet ****
 
 
 	@UPGNX10-255
 	Scenario: AC5- Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
 		When user goes to the login page
-		And  enters valid email"salesmanager15@info.com" and password "salesmanager"
+		And  user enters valid email "salesmanager15@info.com"
+		And  user enters valid password "salesmanager"
 		Then user checks the enter keys works the same as login button
 
 
